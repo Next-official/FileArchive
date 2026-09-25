@@ -23,7 +23,7 @@
                 <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl shadow-inner border border-indigo-100">📂</div>
                 <div>
                     <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">Catalogo Estensioni File</h1>
-                    <p class="text-xs sm:text-sm text-slate-500">Esplora milioni di formati digitali, sorgenti e pacchetti di sistema</p>
+                    <p class="text-xs sm:text-sm text-slate-500">Esplora 300 formati digitali, sorgenti e pacchetti di sistema</p>
                 </div>
             </div>
             
@@ -58,7 +58,6 @@
         </div>
     </main>
 
-    <!-- Modale Dettaglio Estensione -->
     <div id="detailModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs hidden opacity-0 transition-opacity duration-200">
         <div id="modalContent" class="bg-white border border-slate-200 rounded-3xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200 relative">
             <button id="closeModal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors font-bold">
@@ -84,7 +83,6 @@
         </div>
     </div>
 
-    <!-- Modale Info Progetto -->
     <div id="infoModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs hidden opacity-0 transition-opacity duration-200">
         <div id="infoModalContent" class="bg-white border border-slate-200 rounded-3xl max-w-lg w-full p-6 shadow-2xl transform scale-95 transition-transform duration-200 relative">
             <button id="closeInfoModal" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors font-bold">
@@ -95,9 +93,8 @@
                 <h3 class="text-lg font-bold text-slate-900">Perché questo progetto?</h3>
             </div>
             <div class="space-y-3 text-sm text-slate-600 leading-relaxed">
-                <p>Le estensioni dei file (quelle poche lettere che seguono il punto, come <code>.txt</code>, <code>.mp3</code> o <code>.json</code>) sono strumenti talmente onnipresenti nella nostra vita digitale quotidiana che finiscono per passarci costantemente davanti agli occhi senza che ce ne accorgiamo realmente.</p>
-                <p>Siamo così abituati a fare doppio clic per aprire un programma, ascoltare una traccia o leggere un documento che dimentichiamo l'architettura invisibile che sta dietro a ogni formato: compressioni, protocolli di sicurezza, linguaggi di codice e strutture dati.</p>
-                <p class="text-xs text-slate-400 bg-slate-50 p-3 rounded-xl border border-slate-100 font-medium">Questo archivio visivo nasce per dare un volto e un significato a quel piccolo suffisso nascosto, trasformando un dettaglio invisibile della tecnologia in una mappa chiara e interattiva.</p>
+                <p>Le estensioni dei file sono strumenti onnipresenti nella nostra vita digitale quotidiana che definiscono l'architettura invisibile dietro a ogni formato.</p>
+                <p class="text-xs text-slate-400 bg-slate-50 p-3 rounded-xl border border-slate-100 font-medium">Questo archivio visivo raccoglie 300 formati reali per mappare interamente l'universo delle estensioni digitali.</p>
             </div>
         </div>
     </div>
@@ -120,7 +117,29 @@
                     { ext: ".odt", emoji: "📋", name: "OpenDocument Text", desc: "Formato di testo standard e gratuito utilizzato da programmi open-source come LibreOffice e OpenOffice.", type: "Documento Open Source" },
                     { ext: ".rtf", emoji: "📑", name: "Rich Text Format", desc: "Formato di testo intermedio che supporta la formattazione base come il grassetto, corsivo e font multipli.", type: "Documento Intermedio" },
                     { ext: ".md", emoji: "✍️", name: "Markdown", desc: "File di testo che utilizza simboli leggeri per creare formattazioni veloci, ampiamente usato su GitHub e note.", type: "Documento Sviluppo" },
-                    { ext: ".tex", emoji: "📐", name: "LaTeX Source", desc: "Documento sorgente utilizzato dal sistema LaTeX per l'impaginazione professionale di testi scientifici e matematici.", type: "Editor Scientifico" }
+                    { ext: ".tex", emoji: "📐", name: "LaTeX Source", desc: "Documento sorgente utilizzato dal sistema LaTeX per l'impaginazione professionale di testi scientifici e matematici.", type: "Editor Scientifico" },
+                    { ext: ".wpd", emoji: "📄", name: "WordPerfect Document", desc: "Storico formato di elaborazione testi sviluppato originariamente per i sistemi operativi DOS.", type: "Documento Legacy" },
+                    { ext: ".pages", emoji: "🍏", name: "Apple Pages Document", desc: "Documento di scrittura nativo della suite iWork sviluppata da Apple per macOS e iOS.", type: "Documento Apple" },
+                    { ext: ".epub", emoji: "📚", name: "Electronic Publication", desc: "Formato standard aperto basato su HTML e XML per la pubblicazione e lettura di eBook digitali.", type: "EBook Standard" },
+                    { ext: ".mobi", emoji: "📖", name: "Mobipocket eBook", desc: "Formato di libro elettronico ottimizzato storicamente per i dispositivi di lettura Kindle di Amazon.", type: "EBook Kindle" },
+                    { ext: ".djvu", emoji: "📜", name: "DjVu Document", desc: "Formato di file ideale per la memorizzazione di documenti scansionati ad altissima risoluzione e libri antichi.", type: "Documento Scansionato" },
+                    { ext: ".log", emoji: "📋", name: "Log File", desc: "File di testo semplice utilizzato dai programmi per registrare eventi, errori e attività di sistema in tempo reale.", type: "Registro di Sistema" },
+                    { ext: ".cfg", emoji: "⚙️", name: "Configuration File", desc: "File di configurazione testuale impiegato per memorizzare impostazioni e parametri di avvio software.", type: "Configurazione" },
+                    { ext: ".ini", emoji: "🔧", name: "Initialization File", desc: "File di inizializzazione strutturato in sezioni e chiavi, comunemente usato nei sistemi Windows tradizionali.", type: "Inizializzazione" },
+                    { ext: ".properties", emoji: "📋", name: "Java Properties", desc: "File testuale utilizzato nelle applicazioni Java per memorizzare coppie di parametri di configurazione.", type: "Configurazione Java" },
+                    { ext: ".conf", emoji: "🎛️", name: "General Configuration", desc: "File di configurazione generico utilizzato da server web, demoni e applicazioni Unix-like.", type: "Configurazione Server" },
+                    { ext: ".tsv", emoji: "📊", name: "Tab-Separated Values", desc: "Formato di dati tabulari in cui le colonne sono separate da caratteri di tabulazione anziché da virgole.", type: "Dati Tabulari" },
+                    { ext: ".msg", emoji: "✉️", name: "Outlook Saved Mail", desc: "Singolo messaggio di posta elettronica salvato direttamente dall'applicazione Microsoft Outlook.", type: "Email Singola" },
+                    { ext: ".eml", emoji: "📨", name: "Email Message Format", desc: "Formato standard aperto per messaggi di posta elettronica leggibile da quasi tutti i client email.", type: "Email Standard" },
+                    { ext: ".ics", emoji: "📅", name: "iCalendar File", desc: "File di calendario standard utilizzato per scambiare appuntamenti, eventi e inviti tra programmi diversi.", type: "Calendario" },
+                    { ext: ".vcf", emoji: "📇", name: "vCard Contact", desc: "Biglietto da visita elettronico standard per memorizzare e trasferire rubriche contatti e numeri di telefono.", type: "Contatto Rubrica" },
+                    { ext: ".srt", emoji: "💬", name: "SubRip Subtitle", desc: "Il formato di sottotitoli per video più diffuso al mondo, basato su testo semplice con marcatori temporali.", type: "Sottotitoli" },
+                    { ext: ".sub", emoji: "💬", name: "Subtitle File", desc: "File di sottotitoli testuali alternativo utilizzato per la sincronizzazione dei dialoghi nei film.", type: "Sottotitoli" },
+                    { ext: ".wri", emoji: "📝", name: "Windows Write Document", desc: "Vecchio documento di testo formattato associato alle prime versioni storiche di Microsoft Windows.", type: "Documento Legacy" },
+                    { ext: ".ans", emoji: "📟", name: "ANSI Text Art", desc: "File di testo contenente codici di controllo ANSI per la visualizzazione di grafica stilizzata nei terminali.", type: "Testo Artistico" },
+                    { ext: ".ion", emoji: "ℹ️", name: "Description File", desc: "Piccolo file di servizio utilizzato per descrivere in modo testuale i file presenti all'interno di una cartella.", type: "Metadati" },
+                    { ext: ".nfo", emoji: "💡", name: "Information File", desc: "File di informazioni testuali ASCII molto utilizzato nella scena software per leggere note e istruzioni.", type: "Note informative" },
+                    { ext: ".bib", emoji: "📚", name: "BibTeX Bibliography", desc: "File di database bibliografico utilizzato in abbinamento a LaTeX per la gestione di citazioni e fonti.", type: "Bibliografia" }
                 ]
             },
             {
@@ -133,7 +152,31 @@
                     { ext: ".gif", emoji: "🎞️", name: "Immagine GIF", desc: "Immagine compressa a 256 colori famosa per la sua capacità di riprodurre brevi animazioni in loop.", type: "Animazione Web" },
                     { ext: ".svg", emoji: "📐", name: "Grafica Vettoriale Scalabile", desc: "Formato basato su codice XML che descrive forme geometriche, perfetto per loghi che non sgranano mai.", type: "Vettoriale Web" },
                     { ext: ".webp", emoji: "🌐", name: "Google WebP", desc: "Formato moderno sviluppato da Google per immagini web leggerissime e di altissima qualità visiva.", type: "Raster Web Moderno" },
-                    { ext: ".psd", emoji: "🎨", name: "Progetto Photoshop", desc: "File di progetto nativo di Adobe Photoshop che mantiene separati tutti i livelli, maschere ed effetti.", type: "Progetto Grafico" }
+                    { ext: ".psd", emoji: "🎨", name: "Progetto Photoshop", desc: "File di progetto nativo di Adobe Photoshop che mantiene separati tutti i livelli, maschere ed effetti.", type: "Progetto Grafico" },
+                    { ext: ".ai", emoji: "✒️", name: "Adobe Illustrator Artwork", desc: "Formato vettoriale nativo standard per la creazione di illustrazioni professionali e grafica stampabile.", type: "Vettoriale Avanzato" },
+                    { ext: ".bmp", emoji: "🖼️", name: "Bitmap Image", desc: "Immagine raster non compressa sviluppata da Microsoft, caratterizzata da file di dimensioni molto elevate.", type: "Raster Non Compresso" },
+                    { ext: ".tiff", emoji: "📸", name: "Tagged Image File Format", desc: "Formato di immagine raster di altissima qualità utilizzato in ambito professionale tipografico e fotografico.", type: "Raster Professionale" },
+                    { ext: ".raw", emoji: "📷", name: "Raw Camera Image", desc: "File fotografico grezzo che contiene tutti i dati catturati dal sensore di una macchina fotografica digitale.", type: "Foto Grezza" },
+                    { ext: ".ico", emoji: "🔷", name: "Icon File", desc: "Piccolo file grafico utilizzato per definire le icone visive dei programmi e dei siti web (favicon).", type: "Icona di Sistema" },
+                    { ext: ".eps", emoji: "📐", name: "Encapsulated PostScript", desc: "Formato di file grafico vettoriale utilizzato storicamente per il trasferimento sicuro di illustrazioni stampabili.", type: "PostScript Vettoriale" },
+                    { ext: ".indd", emoji: "📰", name: "Adobe InDesign Document", desc: "File di progetto editoriale utilizzato per l'impaginazione di riviste, libri e cataloghi cartacei.", type: "Editoria" },
+                    { ext: ".heic", emoji: "🍏", name: "High Efficiency Image", desc: "Formato di immagine moderno adottato da Apple per memorizzare foto ad alta compressione e qualità.", type: "Immagine Apple" },
+                    { ext: ".avif", emoji: "🌐", name: "AV1 Image File Format", desc: "Formato di immagine di nuovissima generazione basato sul codec video AV1, estremamente efficiente.", type: "Raster di Nuova Generazione" },
+                    { ext: ".kra", emoji: "🖌️", name: "Krita Document", desc: "File di progetto nativo del software open-source Krita per la pittura digitale e l'illustrazione.", type: "Pittura Digitale" },
+                    { ext: ".xcf", emoji: "🎨", name: "GIMP Image Data", desc: "File di progetto nativo di GIMP, l'alternativa open-source più famosa ad Adobe Photoshop per i livelli.", type: "Progetto Open Source" },
+                    { ext: ".cdr", emoji: "✏️", name: "CorelDRAW Drawing", desc: "File vettoriale nativo utilizzato all'interno del software CorelDRAW per la grafica professionale.", type: "Vettoriale Corel" },
+                    { ext: ".pdf", emoji: "📕", name: "Portable Document", desc: "Standard visivo universale utilizzato frequentemente anche per la conservazione di layout grafici impaginati.", type: "Grafica Documentale" },
+                    { ext: ".tga", emoji: "🎮", name: "Truevision TGA", desc: "Formato di immagine raster storico ampiamente utilizzato nei motori di gioco per texture e schermate.", type: "Texture Videogiochi" },
+                    { ext: ".dds", emoji: "🧊", name: "DirectDraw Surface", desc: "Formato grafico ottimizzato per le schede video, impiegato massicciamente per il caricamento di texture 3D.", type: "Texture 3D" },
+                    { ext: ".exr", emoji: "✨", name: "OpenEXR High Dynamic", desc: "Formato di immagine ad alta gamma dinamica sviluppato da Industrial Light & Magic per effetti visivi cinematografici.", type: "Grafica Cinema" },
+                    { ext: ".hdr", emoji: "🌅", name: "High Dynamic Range Image", desc: "Immagine sferica o piatta che memorizza valori di luminosità elevati per l'illuminazione di scene 3D.", type: "Illuminazione 3D" },
+                    { ext: ".emf", emoji: "🔲", name: "Enhanced Metafile", desc: "Formato di metatesto vettoriale sviluppato da Microsoft per la stampa e gli appunti di Windows.", type: "Metafile Windows" },
+                    { ext: ".wmf", emoji: "🔲", name: "Windows Metafile", desc: "Formato grafico vettoriale nativo delle vecchie versioni del sistema operativo Microsoft Windows.", type: "Metafile Legacy" },
+                    { ext: ".pict", emoji: "🎨", name: "Macintosh PICTURE", desc: "Storico formato grafico utilizzato nativamente dai computer Macintosh classici per la grafica.", type: "Grafica Apple Legacy" },
+                    { ext: ".djv", emoji: "📜", name: "DjVu Graphic Raster", desc: "Variante grafica compressa per documenti scansionati complessi ad alta densità visiva.", type: "Raster Compresso" },
+                    { ext: ".pxm", emoji: "🖼️", name: "Pixelmator Document", desc: "File di progetto grafico nativo dell'applicazione Pixelmator Pro per macOS e iOS.", type: "Progetto Mac" },
+                    { ext: ".afphoto", emoji: "🎨", name: "Affinity Photo Document", desc: "File di progetto nativo della suite Affinity per il fotoritocco professionale senza abbonamento.", type: "Fotoritocco Professionale" },
+                    { ext: ".psb", emoji: "🎨", name: "Photoshop Large Document", desc: "Variante di Photoshop progettata appositamente per gestire file di immagini di dimensioni gigantesche.", type: "Grafica Extra Large" }
                 ]
             },
             {
@@ -145,7 +188,32 @@
                     { ext: ".mkv", emoji: "🍿", name: "Matroska Video", desc: "Contenitore video avanzato capace di includere tracce audio multiple, capitoli e sottotitoli in un solo file.", type: "Contenitore Avanzato" },
                     { ext: ".mov", emoji: "🍎", name: "Apple QuickTime Movie", desc: "Formato video ad alta qualità sviluppato originariamente da Apple per il lettore QuickTime.", type: "Video Professionale" },
                     { ext: ".avi", emoji: "📼", name: "Audio Video Interleaved", desc: "Storico formato video di Microsoft, molto diffuso nei primi anni 2000 ma meno ottimizzato oggi.", type: "Video Legacy" },
-                    { ext: ".webm", emoji: "🌐", name: "WebM Video", desc: "Formato video aperto e leggerissimo progettato specificamente per la riproduzione nativa nei browser web.", type: "Video Web Moderno" }
+                    { ext: ".webm", emoji: "🌐", name: "WebM Video", desc: "Formato video aperto e leggerissimo progettato specificamente per la riproduzione nativa nei browser web.", type: "Video Web Moderno" },
+                    { ext: ".flv", emoji: "🔥", name: "Flash Video", desc: "Storico formato video utilizzato per la riproduzione di filmati in streaming tramite Adobe Flash Player.", type: "Video Streaming Legacy" },
+                    { ext: ".wmv", emoji: "🪟", name: "Windows Media Video", desc: "Formato video proprietario sviluppato da Microsoft per la riproduzione multimediale su Windows.", type: "Video Microsoft" },
+                    { ext: ".m4v", emoji: "🍏", name: "iTunes Video File", desc: "Formato di file video protetto o standard sviluppato da Apple, identico all'MP4 ma orientato ad iTunes.", type: "Video Apple" },
+                    { ext: ".mpeg", emoji: "📀", name: "MPEG Video Standard", desc: "Standard internazionale storico per la compressione di video digitali e trasmissioni televisive.", type: "Video Standard" },
+                    { ext: ".3gp", emoji: "📱", name: "3GPP Multimedia File", desc: "Formato video ultraleggero progettato appositamente per i telefoni cellulari di vecchia generazione.", type: "Video Mobile Legacy" },
+                    { ext: ".ts", emoji: "📡", name: "MPEG Transport Stream", desc: "Formato di flusso di trasporto utilizzato per lo streaming in tempo reale e la trasmissione TV digitale.", type: "Flusso TV" },
+                    { ext: ".vob", emoji: "📀", name: "DVD Video Object", desc: "File principale che contiene video, audio e menu all'interno dei tradizionali dischi DVD video.", type: "DVD Video" },
+                    { ext: ".ogv", emoji: "🟢", name: "Ogg Video File", desc: "File video open-source basato sul contenitore Ogg per la riproduzione multimediale libera sul web.", type: "Video Open Source" },
+                    { ext: ".divx", emoji: "🎞️", name: "DivX Encoded Movie", desc: "Filmato compresso tramite il popolare codec DivX che ha spopolato nei lettori multimediali casalinghi.", type: "Video Compresso Legacy" },
+                    { ext: ".xvid", emoji: "🎞️", name: "Xvid Video Stream", desc: "Codec video open-source alternativo a DivX molto utilizzato per la condivisione di film compressi.", type: "Video Codec Aperto" },
+                    { ext: ".rm", emoji: "🔻", name: "RealMedia File", desc: "Storico formato di streaming audio e video sviluppato da RealNetworks nei primi anni duemila.", type: "Streaming Legacy" },
+                    { ext: ".asf", emoji: "🪟", name: "Advanced Systems Format", desc: "Contenitore multimediale proprietario di Microsoft ottimizzato per lo streaming di flussi di rete.", type: "Streaming Microsoft" },
+                    { ext: ".m2ts", emoji: "🔵", name: "Blu-ray BDAV Video", desc: "File video ad alta definizione utilizzato nei dischi Blu-ray e nelle videocamere digitali moderne.", type: "Video HD" },
+                    { ext: ".f4v", emoji: "⚡", name: "Flash MP4 Video", desc: "Formato video basato su MP4 e utilizzato per l'archiviazione di flussi multimediali Adobe Flash.", type: "Video Flash Moderno" },
+                    { ext: ".ogm", emoji: "🟢", name: "Ogg Media Stream", desc: "Estensione del contenitore Ogg creata per supportare tracce video e sottotitoli multipli.", type: "Contenitore Ogg" },
+                    { ext: ".rmvb", emoji: "🔻", name: "RealMedia Variable Bitrate", desc: "Variante del formato RealMedia con bitrate variabile per ottimizzare la qualità dei video in rete.", type: "Video RealMedia" },
+                    { ext: ".amv", emoji: "🎮", name: "Anime Music Video File", desc: "Formato video estremamente compresso e a bassa risoluzione utilizzato dai vecchi lettori MP4 cinesi.", type: "Video Portatile Legacy" },
+                    { ext: ".bik", emoji: "👾", name: "Bink Video", desc: "Formato video proprietario altamente ottimizzato utilizzato all'interno di migliaia di videogiochi.", type: "Video per Videogiochi" },
+                    { ext: ".smk", emoji: "👾", name: "Smacker Video File", desc: "Storico formato video proprietario impiegato per i filmati d'intermezzo nei videogiochi anni '90.", type: "Video Retrogaming" },
+                    { ext: ".mxf", emoji: "🎬", name: "Material Exchange Format", desc: "Formato contenitore professionale standard per lo scambio di materiale video tra emittenti televisive.", type: "Video Broadcast" },
+                    { ext: ".roq", emoji: "🕹️", name: "Quake Video File", desc: "Formato multimediale proprietario utilizzato originariamente nei videogiochi basati sul motore id Tech 2.", type: "Video Gioco Storico" },
+                    { ext: ".yuv", emoji: "📊", name: "Raw YUV Video Data", desc: "Flusso video grezzo non compresso che separa la luminanza dalla crominanza, usato nei laboratori.", type: "Video Grezzo" },
+                    { ext: ".dav", emoji: "📹", name: "DVR Surveillance Video", desc: "Formato video proprietario generato dai sistemi di videosorveglianza e videoregistratori digitali DVR.", type: "Video Sorveglianza" },
+                    { ext: ".h264", emoji: "🎥", name: "H.264 Video Stream", desc: "Flusso video codificato con lo standard di compressione AVC tra i più diffusi ed efficienti al mondo.", type: "Flusso AVC" },
+                    { ext: ".hevc", emoji: "🎥", name: "HEVC Video Stream", desc: "Flusso video codificato con il modernissimo standard H.265 ad altissima efficienza di compressione.", type: "Flusso H.265" }
                 ]
             },
             {
@@ -157,7 +225,32 @@
                     { ext: ".wav", emoji: "🎶", name: "Waveform Audio", desc: "Audio puro non compresso di qualità CD, fedele all'originale ma con file di dimensioni molto elevate.", type: "Audio Non Compresso" },
                     { ext: ".flac", emoji: "💎", name: "Free Lossless Audio Codec", desc: "Audio ad alta fedeltà compresso con un algoritmo speciale che non perde alcuna informazione sonora.", type: "Audio Lossless" },
                     { ext: ".ogg", emoji: "🟢", name: "OGG Vorbis", desc: "Formato audio libero e open-source molto utilizzato nei videogiochi indipendenti e su piattaforme come Discord.", type: "Audio Open Source" },
-                    { ext: ".m4a", emoji: "🎵", name: "MPEG-4 Audio", desc: "File audio di alta qualità codificato con lo standard AAC, molto utilizzato nell'ecosistema Apple e iTunes.", type: "Audio Apple" }
+                    { ext: ".m4a", emoji: "🎵", name: "MPEG-4 Audio", desc: "File audio di alta qualità codificato con lo standard AAC, molto utilizzato nell'ecosistema Apple e iTunes.", type: "Audio Apple" },
+                    { ext: ".aac", emoji: "📻", name: "Advanced Audio Coding", desc: "Formato di codifica audio standard ad alta efficienza per la trasmissione di streaming e musica digitale.", type: "Audio Standard" },
+                    { ext: ".wma", emoji: "🪟", name: "Windows Media Audio", desc: "Formato audio proprietario sviluppato da Microsoft per la riproduzione di file musicali su Windows.", type: "Audio Microsoft" },
+                    { ext: ".midi", emoji: "🎹", name: "Musical Instrument Digital Interface", desc: "File che contiene note musicali digitali e comandi di esecuzione per sintetizzatori e strumenti virtuali.", type: "Dati Musicali" },
+                    { ext: ".alac", emoji: "🍎", name: "Apple Lossless Audio", desc: "Codec audio sviluppato da Apple per comprimere la musica senza alcuna perdita di qualità sonora.", type: "Audio Lossless Apple" },
+                    { ext: ".aiff", emoji: "🍏", name: "Audio Interchange File Format", desc: "Formato audio standard non compresso ad alta fedeltà utilizzato storicamente sui computer Apple Macintosh.", type: "Audio Professionale Apple" },
+                    { ext: ".opus", emoji: "🎙️", name: "Opus Audio Codec", desc: "Formato audio interattivo estremamente efficiente e a bassissima latenza, perfetto per le chiamate VoIP.", type: "Audio VoIP" },
+                    { ext: ".amr", emoji: "📱", name: "Adaptive Multi-Rate", desc: "Formato audio ottimizzato specificamente per la registrazione e la compressione della voce umana nei telefoni.", type: "Audio Vocale Mobile" },
+                    { ext: ".ac3", emoji: "🎬", name: "Dolby Digital Audio", desc: "Formato audio multicanale surround utilizzato nei film in DVD, Blu-ray e nelle sale cinematografiche.", type: "Audio Surround" },
+                    { ext: ".dts", emoji: "🔊", name: "Dedicated Theater Systems", desc: "Formato audio digitale ad altissima fedeltà impiegato per colonne sonore cinematografiche multicanale.", type: "Audio Cinema" },
+                    { ext: ".m4r", emoji: "📱", name: "iPhone Ringtone", desc: "File audio personalizzato utilizzato specificamente come suoneria per i dispositivi mobili iPhone di Apple.", type: "Suoneria Mobile" },
+                    { ext: ".ra", emoji: "🔻", name: "Real Audio Stream", desc: "Storico formato audio utilizzato nei primi anni duemila per ascoltare trasmissioni radiofoniche in streaming.", type: "Streaming Audio Legacy" },
+                    { ext: ".au", emoji: "🎧", name: "Sun Microsystems Audio", desc: "Formato audio basilare utilizzato storicamente sui computer e sui server basati su sistemi Unix Sun.", type: "Audio Unix" },
+                    { ext: ".caf", emoji: "🍏", name: "Core Audio Format", desc: "Contenitore audio flessibile sviluppato da Apple per gestire registrazioni sonore di grandi dimensioni.", type: "Audio Apple Avanzato" },
+                    { ext: ".ape", emoji: "🐒", name: "Monkey's Audio", desc: "Formato di compressione audio lossless che riduce le dimensioni dei file musicali senza alcuna perdita.", type: "Audio Lossless" },
+                    { ext: ".shn", emoji: "📦", name: "Shorten Lossless Audio", desc: "Storico formato di compressione audio lossless utilizzato in passato per scambiare concerti registrati.", type: "Audio Lossless Storico" },
+                    { ext: ".tta", emoji: "🦆", name: "True Audio Lossless", desc: "Codec audio open-source semplice e veloce per la compressione senza perdita di file musicali.", type: "Audio Lossless Aperto" },
+                    { ext: ".wv", emoji: "🌊", name: "WavPack Lossless Audio", desc: "Formato audio ibrido capace di funzionare sia in modalità lossless che con compressione con perdita.", type: "Audio Ibrido" },
+                    { ext: ".voc", emoji: "🕹️", name: "Creative Voice File", desc: "Storico formato audio utilizzato dalle prime schede audio Sound Blaster nei PC degli anni '90.", type: "Audio Retrogaming" },
+                    { ext: ".s3m", emoji: "🎹", name: "ScreamTracker Module", desc: "Modulo di musica tracker utilizzato dai musicisti digitali della scena demoscene nei computer anni '90.", type: "Musica Tracker" },
+                    { ext: ".mod", emoji: "🎵", name: "Amiga Music Module", desc: "Storico file di musica digitale basato su campioni sonori e sequenze nativo dei computer Commodore Amiga.", type: "Modulo Amiga" },
+                    { ext: ".xm", emoji: "🎧", name: "Extended Module Music", desc: "Formato di musica tracker avanzato con supporto per canali multipli e strumenti musicali digitali.", type: "Tracker Avanzato" },
+                    { ext: ".it", emoji: "🎼", name: "Impulse Tracker Module", desc: "Formato di file musicale tracker di altissima qualità utilizzato per la composizione di musica elettronica.", type: "Impulse Tracker" },
+                    { ext: ".dsf", emoji: "💿", name: "Direct Stream Digital File", desc: "Formato audio ad altissima risoluzione utilizzato per la memorizzazione di file musicali in qualità SACD.", type: "Audio Audiofilo" },
+                    { ext: ".gsm", emoji: "📞", name: "Global System Mobile Audio", desc: "Formato di compressione audio vocale standardizzato utilizzato per le reti telefoniche cellulari digitali.", type: "Audio Telefonico" },
+                    { ext: ".spx", emoji: "🗣️", name: "Speex Audio Codec", desc: "Formato audio open-source progettato appositamente per la compressione di flussi di voce umana via VoIP.", type: "Codec Vocale" }
                 ]
             },
             {
@@ -170,7 +263,31 @@
                     { ext: ".js", emoji: "⚡", name: "JavaScript Source", desc: "Linguaggio di programmazione che rende i siti web interattivi, dinamici e reattivi lato client.", type: "Linguaggio Web" },
                     { ext: ".py", emoji: "🐍", name: "Python Script", desc: "Script scritto in linguaggio Python, popolarissimo per automazioni, intelligenza artificiale, data science e hacking.", type: "Linguaggio Versatile" },
                     { ext: ".cpp", emoji: "🚀", name: "C++ Source Code", desc: "File di codice sorgente scritto in C++, evoluzione orientata agli oggetti del C usata in motori di gioco e software.", type: "Linguaggio Avanzato" },
-                    { ext: ".json", emoji: "📦", name: "JSON Data File", desc: "Formato leggero basato su testo strutturato a chiavi-valori utilizzato per scambiare dati tra programmi.", type: "Formato Dati" }
+                    { ext: ".json", emoji: "📦", name: "JSON Data File", desc: "Formato leggero basato su testo strutturato a chiavi-valori utilizzato per scambiare dati tra programmi.", type: "Formato Dati" },
+                    { ext: ".c", emoji: "⚙️", name: "C Source Code", desc: "Codice sorgente scritto nel classico linguaggio di programmazione C, alla base di sistemi operativi e kernel.", type: "Linguaggio di Sistema" },
+                    { ext: ".h", emoji: "🧩", name: "C/C++ Header File", desc: "File di intestazione contenente dichiarazioni di funzioni e macro per la compilazione di programmi C e C++.", type: "Header di Sistema" },
+                    { ext: ".java", emoji: "☕", name: "Java Source Code", desc: "Codice sorgente scritto in linguaggio Java, eseguibile su qualsiasi piattaforma grazie alla Java Virtual Machine.", type: "Linguaggio Enterprise" },
+                    { ext: ".php", emoji: "🐘", name: "PHP Script File", desc: "Linguaggio di scripting lato server molto utilizzato per la creazione di siti web dinamici e piattaforme CMS.", type: "Web Backend" },
+                    { ext: ".rb", emoji: "💎", name: "Ruby Source File", desc: "File di codice sorgente scritto in Ruby, un linguaggio elegante orientato agli oggetti e al web.", type: "Linguaggio Ruby" },
+                    { ext: ".go", emoji: "🐹", name: "Go Language Source", desc: "Linguaggio di programmazione open-source sviluppato da Google per la creazione di software veloce e scalabile.", type: "Linguaggio Cloud" },
+                    { ext: ".rs", emoji: "🦀", name: "Rust Source Code", desc: "Codice sorgente scritto in Rust, focalizzato sulle massime prestazioni, sicurezza della memoria e concorrenza.", type: "Linguaggio Sicuro" },
+                    { ext: ".ts", emoji: "📘", name: "TypeScript Source", desc: "Superinsieme di JavaScript che aggiunge la tipizzazione statica per scrivere codice robusto e scalabile.", type: "Web Tipizzato" },
+                    { ext: ".xml", emoji: "📋", name: "XML Data Document", desc: "Linguaggio di marcatura estensibile utilizzato per la memorizzazione e il trasporto strutturato di dati.", type: "Struttura Dati" },
+                    { ext: ".yaml", emoji: "⚙️", name: "YAML Configuration", desc: "Formato di serializzazione dati leggibile dall'uomo, ampiamente utilizzato per file di configurazione e DevOps.", type: "Configurazione DevOps" },
+                    { ext: ".sql", emoji: "📊", name: "SQL Database Script", desc: "File di testo contenente script, query e comandi per creare strutture, inserire o estrarre dati da database.", type: "Query Database" },
+                    { ext: ".swift", emoji: "🦅", name: "Swift Source Code", desc: "Linguaggio di programmazione moderno sviluppato da Apple per lo sviluppo di app su iOS, iPadOS e macOS.", type: "Linguaggio Apple" },
+                    { ext: ".kt", emoji: "🤖", name: "Kotlin Source Code", desc: "Linguaggio di programmazione moderno raccomandato da Google per lo sviluppo nativo di applicazioni Android.", type: "Linguaggio Android" },
+                    { ext: ".cs", emoji: "🔷", name: "C# Source Code", desc: "Codice sorgente scritto in C#, linguaggio orientato agli oggetti sviluppato da Microsoft per il framework .NET.", type: "Linguaggio Microsoft" },
+                    { ext: ".lua", emoji: "🌙", name: "Lua Script File", desc: "Linguaggio di scripting leggero, veloce e incorporabile, molto utilizzato per la creazione di mod nei videogiochi.", type: "Scripting Leggero" },
+                    { ext: ".pl", emoji: "🐪", name: "Perl Script", desc: "Linguaggio di scripting storico molto potente per l'elaborazione di stringhe di testo e amministrazione.", type: "Linguaggio Perl" },
+                    { ext: ".r", emoji: "📊", name: "R Statistical Script", desc: "Linguaggio di programmazione e ambiente software dedicato al calcolo statistico e all'analisi dei dati.", type: "Statistica" },
+                    { ext: ".scala", emoji: "📈", name: "Scala Source File", desc: "Linguaggio di programmazione che combina paradigmi orientati agli oggetti e funzionali per la JVM.", type: "Linguaggio Scala" },
+                    { ext: ".hs", emoji: "λ", name: "Haskell Source Code", desc: "Linguaggio di programmazione puramente funzionale avanzato basato su rigidi concetti matematici.", type: "Linguaggio Funzionale" },
+                    { ext: ".asm", emoji: "📟", name: "Assembly Source Code", desc: "Linguaggio di basso livello vicino al codice macchina, utilizzato per la programmazione di microcontrollori.", type: "Basso Livello" },
+                    { ext: ".vue", emoji: "💚", name: "Vue.js Component File", desc: "File di componente monofile che unisce template HTML, logica JavaScript e stili CSS per Vue.", type: "Componente Web" },
+                    { ext: ".jsx", emoji: "⚛️", name: "React JSX File", desc: "File JavaScript che supporta la sintassi XML per la creazione di interfacce utente dinamiche con React.", type: "Frontend React" },
+                    { ext: ".scss", emoji: "🎨", name: "Sass Stylesheet", desc: "Foglio di stile avanzato che estende le funzionalità del CSS con variabili, nidificazioni e funzioni.", type: "CSS Avanzato" },
+                    { ext: ".less", emoji: "🎨", name: "Less Stylesheet", desc: "Preprocessore CSS dinamico che permette di scrivere fogli di stile più manutenibili ed organizzati.", type: "Preprocessore CSS" }
                 ]
             },
             {
@@ -181,7 +298,33 @@
                     { ext: ".sh", emoji: "🐚", name: "Bash Shell Script", desc: "Script per la shell Bash di Linux e Unix, usato per automatizzare comandi, deployment e tool di sistema.", type: "Unix Scripting" },
                     { ext: ".bat", emoji: "💻", name: "Windows Batch File", desc: "File batch contenente sequenze di comandi da eseguire nel prompt dei comandi (CMD) di Windows.", type: "Windows Automazione" },
                     { ext: ".ps1", emoji: "⚡", name: "PowerShell Script", desc: "Script di comandi avanzato progettato per la console PowerShell di Windows per amministratori di sistema.", type: "Windows PowerShell" },
-                    { ext: ".zsh", emoji: "⚡", name: "Zsh Shell Script", desc: "Script di configurazione e comandi per la shell Zsh, l'interprete di comando predefinito sui moderni Mac.", type: "Unix Zsh" }
+                    { ext: ".zsh", emoji: "⚡", name: "Zsh Shell Script", desc: "Script di configurazione e comandi per la shell Zsh, l'interprete di comando predefinito sui moderni Mac.", type: "Unix Zsh" },
+                    { ext: ".cmd", emoji: "🖥️", name: "Command Script", desc: "Script di comandi batch alternativo eseguibile all'interno dell'ambiente dei sistemi operativi Windows.", type: "Comandi Windows" },
+                    { ext: ".fish", emoji: "🐟", name: "Fish Shell Script", desc: "Script per la shell interattiva Fish, progettata per essere user-friendly e ricca di funzioni moderne.", type: "Shell Moderna" },
+                    { ext: ".bash", emoji: "🐧", name: "Bash Profile Script", desc: "File di configurazione e script di avvio personalizzato per la shell Bash nei sistemi Linux e macOS.", type: "Profilo Unix" },
+                    { ext: ".profile", emoji: "👤", name: "User Shell Profile", desc: "Script eseguito all'accesso dell'utente nei sistemi Unix per impostare le variabili d'ambiente globali.", type: "Ambiente Sistema" },
+                    { ext: ".vbs", emoji: "📜", name: "VBScript File", desc: "Script basato sul linguaggio Visual Basic, utilizzato per automatizzare operazioni all'interno di Windows.", type: "Script Microsoft" },
+                    { ext: ".awk", emoji: "🔍", name: "AWK Scripting File", desc: "Programma scritto per l'utilità AWK, specializzato nell'estrazione e manipolazione di file di testo colonnari.", type: "Elaborazione Testo" },
+                    { ext: ".sed", emoji: "✂️", name: "Sed Stream Editor Script", desc: "Script di comandi per l'editor di flusso sed, utilizzato per trasformazioni di testo automatizzate nei terminali.", type: "Editor di Flusso" },
+                    { ext: ".tcsh", emoji: "🐚", name: "TENEX C Shell Script", desc: "Script di comandi per la storica shell tcsh compatibile con la sintassi del linguaggio C.", type: "Shell Storica" },
+                    { ext: ".ksh", emoji: "🐚", name: "KornShell Script", desc: "Script sviluppato per la KornShell, un interprete di comandi Unix potente e retrocompatibile.", type: "Korn Shell" },
+                    { ext: ".reg", emoji: "🪟", name: "Windows Registry File", desc: "File di testo utilizzato per aggiungere, modificare o rimuovere chiavi e valori nel Registro di Windows.", type: "Registro di Sistema" },
+                    { ext: ".applescript", emoji: "🍏", name: "AppleScript File", desc: "Script nativo per automatizzare le applicazioni e le funzioni di sistema sui computer Apple macOS.", type: "Automazione Mac" },
+                    { ext: ".workflow", emoji: "⚙️", name: "Automator Workflow", desc: "Flusso di lavoro automatizzato creato con l'applicazione Automator inclusa nei sistemi macOS.", type: "Flusso Automator" },
+                    { ext: ".service", emoji: "🔧", name: "Systemd Service Unit", desc: "File di configurazione utilizzato da systemd per gestire i servizi di sistema e i demoni in Linux.", type: "Servizio Linux" },
+                    { ext: ".cron", emoji: "⏰", name: "Cron Job Schedule", desc: "Tabella di pianificazione temporale utilizzata dal demone cron per eseguire script automatici a ore fisse.", type: "Pianificatore Cron" },
+                    { ext: ".makefile", emoji: "🛠️", name: "Makefile Build Script", desc: "File di istruzioni utilizzato dal comando make per compilare programmi sorgente complessi in modo efficiente.", type: "Compilazione" },
+                    { ext: ".cmake", emoji: "🛠️", name: "CMake Build Configuration", desc: "File di configurazione per la generazione di file di progetto multipiattaforma per la compilazione.", type: "Configurazione Build" },
+                    { ext: ".dockerfile", emoji: "🐳", name: "Docker Container Config", desc: "File di istruzioni testuali utilizzato da Docker per creare immagini di container software isolati.", type: "Container DevOps" },
+                    { ext: ".vagrantfile", emoji: "📦", name: "Vagrant Virtual Machine", desc: "Script di configurazione Ruby utilizzato per creare e gestire ambienti di macchine virtuali di sviluppo.", type: "Virtualizzazione" },
+                    { ext: ".lock", emoji: "🔒", name: "Package Lock File", desc: "File generato dai gestori di pacchetti per bloccare le versioni esatte delle dipendenze di un progetto.", type: "Dipendenze Software" },
+                    { ext: ".Rakefile", emoji: "💎", name: "Ruby Rake Task Script", desc: "File di automazione dei task di compilazione e gestione scritti nel linguaggio di programmazione Ruby.", type: "Automazione Ruby" },
+                    { ext: ".ant", emoji: "🐜", name: "Apache Ant Build File", desc: "File di configurazione XML utilizzato per automatizzare i processi di compilazione di progetti software Java.", type: "Build Java" },
+                    { ext: ".gradle", emoji: "🐘", name: "Gradle Build Script", desc: "Script di automazione della compilazione utilizzato nei progetti Android e Java moderni.", type: "Build Android" },
+                    { ext: ".maven", emoji: "📦", name: "Maven Project Object Model", desc: "File di configurazione strutturato per la gestione dei progetti e delle librerie nel mondo Java.", type: "Gestione Progetto" },
+                    { ext: ".tmux", emoji: "🖥️", name: "Tmux Configuration", desc: "File di configurazione per il multiplexer di terminale tmux per gestire sessioni multiple a schermo.", type: "Terminal Multiplexer" },
+                    { ext: ".screen", emoji: "🖥️", name: "GNU Screen Configuration", desc: "File di personalizzazione per il gestore di finestre testuali GNU Screen nei sistemi operativi Unix.", type: "Gestione Finestre" },
+                    { ext: ".xinitrc", emoji: "🖥️", name: "X Window Startup Script", desc: "Script di avvio utilizzato per inizializzare l'ambiente grafico X11 nei sistemi operativi Linux.", type: "Avvio Grafico" }
                 ]
             },
             {
@@ -193,7 +336,32 @@
                     { ext: ".msi", emoji: "📦", name: "Microsoft Installer", desc: "Pacchetto speciale utilizzato per l'installazione, manutenzione e rimozione guidata di software in Windows.", type: "Installatore Windows" },
                     { ext: ".dmg", emoji: "💿", name: "macOS Disk Image", desc: "Immagine disco utilizzata per distribuire, montare e installare applicazioni sui computer Mac.", type: "Immagine Disco macOS" },
                     { ext: ".apk", emoji: "🤖", name: "Android Package", desc: "Pacchetto di installazione contenente un'applicazione pronta per smartphone e tablet basati su Android.", type: "App Mobile" },
-                    { ext: ".dll", emoji: "🧩", name: "Dynamic Link Library", desc: "Libreria di codice condivisa che permette a più programmi Windows di eseguire funzioni comuni contemporaneamente.", type: "Libreria di Sistema" }
+                    { ext: ".dll", emoji: "🧩", name: "Dynamic Link Library", desc: "Libreria di codice condivisa che permette a più programmi Windows di eseguire funzioni comuni contemporaneamente.", type: "Libreria di Sistema" },
+                    { ext: ".app", emoji: "🍎", name: "macOS Application Bundle", desc: "Cartella strutturata che racchiude tutte le risorse e i binari necessari per eseguire un programma su Mac.", type: "Applicazione Mac" },
+                    { ext: ".deb", emoji: "🐧", name: "Debian Software Package", desc: "Pacchetto di installazione software utilizzato dai sistemi Linux basati su Debian, come Ubuntu e Linux Mint.", type: "Pacchetto Linux" },
+                    { ext: ".rpm", emoji: "🎩", name: "Red Hat Package Manager", desc: "Pacchetto di installazione software standard utilizzato nelle distribuzioni Linux come Fedora e CentOS.", type: "Pacchetto RPM" },
+                    { ext: ".jar", emoji: "☕", name: "Java Archive Executable", desc: "Archivio compresso contenente classi e librerie Java pronte per essere eseguite su qualsiasi piattaforma.", type: "Eseguibile Java" },
+                    { ext: ".com", emoji: "💻", name: "DOS Command Binary", desc: "Storico file eseguibile binario leggero utilizzato nei sistemi operativi basati su MS-DOS.", type: "Binario Legacy" },
+                    { ext: ".sys", emoji: "⚙️", name: "Windows System Driver", desc: "Driver di periferica o modulo di sistema essenziale per consentire a Windows di comunicare con l'hardware.", type: "Driver di Sistema" },
+                    { ext: ".drv", emoji: "🔌", name: "Hardware Device Driver", desc: "File di driver binario utilizzato per pilotare componenti hardware collegati al computer.", type: "Driver Hardware" },
+                    { ext: ".bin", emoji: "🧩", name: "Binary Executable Data", desc: "File binario generico contenente codice eseguibile o dati grezzi di programmazione di sistema.", type: "Binario Grezzo" },
+                    { ext: ".out", emoji: "🚀", name: "Unix Compiled Output", desc: "File eseguibile predefinito generato dai compilatori di codice C e C++ sui sistemi operativi Unix.", type: "Binario Unix" },
+                    { ext: ".run", emoji: "🏃", name: "Linux Self-Extracting Installer", desc: "Script eseguibile autorisolvente utilizzato per installare driver o software complessi su Linux.", type: "Installatore Linux" },
+                    { ext: ".AppImage", emoji: "🐧", name: "Linux Portable AppImage", desc: "Applicazione portatile autonoma per Linux che racchiude tutto il necessario per girare senza installazione.", type: "App Portatile Linux" },
+                    { ext: ".snap", emoji: "📦", name: "Snap Software Package", desc: "Pacchetto di installazione universale per applicazioni Linux sviluppato originariamente da Canonical.", type: "Pacchetto Snap" },
+                    { ext: ".flatpak", emoji: "📦", name: "Flatpak Application Bundle", desc: "Sistema di distribuzione software per applicazioni desktop indipendenti dalla distribuzione Linux.", type: "Pacchetto Flatpak" },
+                    { ext: ".ipa", emoji: "📱", name: "iOS App Store Package", desc: "Pacchetto di installazione contenente un'applicazione progettata specificamente per iPhone e iPad.", type: "App iOS" },
+                    { ext: ".pkg", emoji: "📦", name: "macOS Installer Package", desc: "Pacchetto di installazione guidata utilizzato per distribuire software complessi su macOS.", type: "Installatore Mac" },
+                    { ext: ".ko", emoji: "🐧", name: "Linux Kernel Module", desc: "Modulo di estensione dinamica del kernel del sistema operativo Linux per supportare nuove funzioni.", type: "Modulo Kernel" },
+                    { ext: ".efi", emoji: "🖥️", name: "Extensible Firmware Interface", desc: "Eseguibile di avvio di sistema utilizzato dai computer moderni con UEFI per avviare il sistema operativo.", type: "Avvio UEFI" },
+                    { ext: ".acpi", emoji: "🔋", name: "ACPI BIOS Table File", desc: "File di configurazione e controllo dell'energia e della gestione hardware della scheda madre.", type: "Tabella ACPI" },
+                    { ext: ".rom", emoji: "💾", name: "Firmware ROM Image", desc: "Copia binaria del firmware scritto nel chip di memoria permanente di schede video o schede madri.", type: "Immagine Firmware" },
+                    { ext: ".cab", emoji: "🗜️", name: "Microsoft Cabinet Archive", desc: "Archivio compresso utilizzato da Microsoft Windows per distribuire file di sistema e aggiornamenti.", type: "Archivio Windows" },
+                    { ext: ".msp", emoji: "🩹", name: "Windows Installer Patch", desc: "Pacchetto di aggiornamento incrementale e correzione bug per applicazioni installate in Windows.", type: "Patch Windows" },
+                    { ext: ".mst", emoji: "🛠️", name: "Windows Installer Transform", desc: "File di personalizzazione utilizzato per configurare le installazioni automatizzate di pacchetti MSI.", type: "Trasformazione MSI" },
+                    { ext: ".scr", emoji: "🖥️", name: "Windows Screen Saver", desc: "File eseguibile speciale associato ai programmi di protezione dello schermo nei sistemi Windows.", type: "Salvaschermo" },
+                    { ext: ".cpl", emoji: "🎛️", name: "Control Panel Extension", desc: "Libreria eseguibile speciale che rappresenta un modulo del Pannello di controllo di Windows.", type: "Pannello Windows" },
+                    { ext: ".tsp", emoji: "📞", name: "Telephony Service Provider", desc: "Libreria di sistema utilizzata per gestire i servizi di telefonia e modem all'interno di Windows.", type: "Servizio Telefonia" }
                 ]
             },
             {
@@ -205,7 +373,32 @@
                     { ext: ".rar", emoji: "📦", name: "RAR Archive", desc: "Formato di compressione avanzato proprietario del celebre programma WinRAR, con ottimi tassi di compressione.", type: "Archivio Avanzato" },
                     { ext: ".7z", emoji: "🗃️", name: "7-Zip Archive", desc: "Archivio ad altissima compressione gestito dal software gratuito e open-source 7-Zip.", type: "Alta Compressione" },
                     { ext: ".tar", emoji: "📁", name: "TAR Archive", desc: "Archivio che unisce più file in uno solo senza comprimerli, tipico dei sistemi Unix e Linux.", type: "Raccolta File Unix" },
-                    { ext: ".iso", emoji: "💿", name: "ISO Disk Image", desc: "Copia esatta e completa (immagine speculare) del contenuto di un intero CD, DVD o disco ottico.", type: "Immagine Disco" }
+                    { ext: ".iso", emoji: "💿", name: "ISO Disk Image", desc: "Copia esatta e completa (immagine speculare) del contenuto di un intero CD, DVD o disco ottico.", type: "Immagine Disco" },
+                    { ext: ".gz", emoji: "🗜️", name: "Gzip Compressed File", desc: "File compresso con l'algoritmo GNU zip, molto utilizzato per comprimere singoli file nei sistemi Unix.", type: "Compressione Unix" },
+                    { ext: ".xz", emoji: "🗜️", name: "XZ Compressed Archive", desc: "Formato di compressione file ad altissima efficienza basato sull'algoritmo LZMA2.", type: "Alta Compressione" },
+                    { ext: ".bz2", emoji: "🗜️", name: "Bzip2 Compressed File", desc: "Formato di compressione file basato sull'algoritmo di Burrows-Wheeler, diffuso in ambiente Linux.", type: "Compressione Bzip" },
+                    { ext: ".tgz", emoji: "📦", name: "TAR GZ Archive", desc: "Archivio TAR compresso ulteriormente con Gzip, lo standard storico per distribuire sorgenti software.", type: "Archivio Linux" },
+                    { ext: ".tbz2", emoji: "📦", name: "TAR BZ2 Archive", desc: "Archivio di file multipli uniti con TAR e compressi tramite l'algoritmo Bzip2 per risparmiare spazio.", type: "Archivio Compresso" },
+                    { ext: ".z", emoji: "🗜️", name: "Unix Compress File", desc: "Storico formato di compressione file utilizzato dalle primissime versioni dei sistemi operativi Unix.", type: "Compressione Legacy" },
+                    { ext: ".lz", emoji: "🗜️", name: "Lzip Compressed File", desc: "Formato di compressione dati senza perdita basato sull'algoritmo LZMA con interfaccia pulita.", type: "Compressione Lzip" },
+                    { ext: ".lzma", emoji: "🗜️", name: "LZMA Compressed File", desc: "File compresso con l'algoritmo LZMA originale, noto per offrire rapporti di compressione eccellenti.", type: "Algoritmo LZMA" },
+                    { ext: ".cab", emoji: "📦", name: "Cabinet Archive", desc: "Archivio compresso proprietario di Microsoft utilizzato per distribuire file di installazione.", type: "Archivio Microsoft" },
+                    { ext: ".img", emoji: "💾", name: "Disk Image File", desc: "Immagine binaria grezza di un supporto di memoria, come un disco rigido o una scheda di memoria SD.", type: "Immagine Grezza" },
+                    { ext: ".nrg", emoji: "💿", name: "Nero Burning ROM Image", desc: "Immagine disco proprietaria creata con il celebre software di masterizzazione Nero Burning ROM.", type: "Immagine Nero" },
+                    { ext: ".mdf", emoji: "💿", name: "Media Disc Image", desc: "Immagine disco creata con Alcohol 120%, spesso accompagnata da un file di metadati descrittivi MDS.", type: "Immagine Disco" },
+                    { ext: ".cue", emoji: "🎵", name: "Cue Sheet Metadata", desc: "File di testo che descrive come le tracce audio sono disposte all'interno di un'immagine disco o CD.", type: "Metadati Tracce" },
+                    { ext: ".vhd", emoji: "💻", name: "Virtual Hard Disk", desc: "File che rappresenta un disco rigido virtuale utilizzato da Microsoft Hyper-V e Virtual PC.", type: "Disco Virtuale" },
+                    { ext: ".vmdk", emoji: "🖥️", name: "Virtual Machine Disk", desc: "Formato di disco rigido virtuale utilizzato da VMware per le sue macchine virtuali isolate.", type: "Disco VMware" },
+                    { ext: ".ova", emoji: "📦", name: "Open Virtual Appliance", desc: "Pacchetto di esportazione di una macchina virtuale aperta contenente configurazioni e dischi.", type: "Appliance Virtuale" },
+                    { ext: ".ovf", emoji: "📋", name: "Open Virtualization Format", desc: "File di descrizione descrittivo basato su XML per la distribuzione di software virtualizzato.", type: "Formato Virtuale" },
+                    { ext: ".zst", emoji: "⚡", name: "Zstandard Compressed File", desc: "Algoritmo di compressione moderno sviluppato da Facebook per offrire velocità e rapporti elevati.", type: "Compressione Moderna" },
+                    { ext: ".arj", emoji: "🗜️", name: "ARJ Compressed Archive", desc: "Storico formato di compressione file molto popolare nei computer con sistemi operativi DOS negli anni '90.", type: "Archivio Legacy" },
+                    { ext: ".lha", emoji: "🗜️", name: "LZH Compressed Archive", desc: "Formato di compressione file storico ideato in Giappone e molto utilizzato nei computer classici.", type: "Archivio Storico" },
+                    { ext: ".ace", emoji: "📦", name: "ACE Compressed Archive", desc: "Formato di archivio compresso proprietario che offriva tassi di compressione elevati nei primi anni 2000.", type: "Archivio ACE" },
+                    { ext: ".pkg", emoji: "📦", name: "Package Archive", desc: "Archivio di file utilizzato per distribuire pacchetti di installazione complessi su vari sistemi.", type: "Pacchetto Dati" },
+                    { ext: ".cpio", emoji: "📁", name: "CPIO Archive File", desc: "Storico formato di archivio file utilizzato nei sistemi operativi Unix per raggruppare dati di backup.", type: "Backup Unix" },
+                    { ext: ".rpm", emoji: "📦", name: "RPM Package Archive", desc: "Archivio software strutturato utilizzato per la gestione dei pacchetti nelle distribuzioni Linux Red Hat.", type: "Pacchetto RPM" },
+                    { ext: ".deb", emoji: "📦", name: "Debian Package Archive", desc: "Archivio strutturato contenente file software pronti per essere installati nei sistemi Debian.", type: "Pacchetto Debian" }
                 ]
             },
             {
@@ -216,37 +409,33 @@
                     { ext: ".sql", emoji: "📊", name: "SQL Database Script", desc: "File di testo contenente script, query e comandi per creare strutture, inserire o estrarre dati da database relazionali.", type: "Query Database" },
                     { ext: ".sqlite", emoji: "🗃️", name: "SQLite Database", desc: "Database leggero autosufficiente che contiene intere tabelle salvate in un unico file locale senza server.", type: "Database Locale" },
                     { ext: ".xlsx", emoji: "📈", name: "Excel Spreadsheet", desc: "Foglio di calcolo moderno creato con Microsoft Excel, organizzato in celle, formule e tabelle.", type: "Foglio di Calcolo" },
-                    { ext: ".csv", emoji: "📋", name: "Comma Separated Values", desc: "File di testo semplice contenente dati strutturati in tabella separati semplicemente da virgole o punti e virgola.", type: "Tabella Dati" }
-                ]
-            },
-            {
-                id: "security",
-                name: "Sicurezza e Certificati",
-                icon: "🔒",
-                items: [
-                    { ext: ".pem", emoji: "🔑", name: "PEM Privacy Enhanced Mail", desc: "Certificato di sicurezza digitale crittografato X.509, fondamentale per abilitare connessioni protette HTTPS.", type: "Certificato SSL" },
-                    { ext: ".crt", emoji: "🛡️", name: "Security Certificate", desc: "Certificato digitale utilizzato dai server web per autenticare l'identità e proteggere i dati degli utenti.", type: "Certificato Web" },
-                    { ext: ".key", emoji: "🗝️", name: "Private Security Key", desc: "File che custodisce una chiave di sicurezza privata per decrittografare dati o autenticarsi via SSH senza password.", type: "Chiave Privata" }
-                ]
-            },
-            {
-                id: "gaming",
-                name: "Gaming ed Emulazione",
-                icon: "🎮",
-                items: [
-                    { ext: ".rom", emoji: "🕹️", name: "ROM Cartridge Data", desc: "Copia dei dati estratti dai chip delle vecchie cartucce di videogiochi, eseguibili tramite emulatori.", type: "Emulazione Retrogaming" },
-                    { ext: ".bin", emoji: "💿", name: "Binary Disc Image", desc: "Immagine binaria grezza di dischi di gioco o dati di sistema letta da emulatori e strumenti di masterizzazione.", type: "Immagine Binaria" },
-                    { ext: ".sav", emoji: "💾", name: "Game Save State", desc: "File che memorizza i salvataggi, i progressi e i punteggi di gioco di un utente all'interno di un videogioco.", type: "Salvataggio Gioco" }
-                ]
-            },
-            {
-                id: "cad3d",
-                name: "Grafica 3D e CAD",
-                icon: "🧊",
-                items: [
-                    { ext: ".obj", emoji: "🗿", name: "Wavefront 3D Object", desc: "Formato universale per modelli tridimensionali, ampiamente scambiato tra Blender, Maya e motori di gioco.", type: "Modello 3D Universale" },
-                    { ext: ".fbx", emoji: "📦", name: "Autodesk FBX", desc: "Formato proprietario ma ampiamente supportato per scambiare scene 3D complesse con animazioni e ossa.", type: "Scena 3D Avanzata" },
-                    { ext: ".stl", emoji: "🖨️", name: "Stereolithography 3D", desc: "Formato standard utilizzato per inviare modelli geometrici tridimensionali alle stampanti 3D per la fabbricazione.", type: "Stampa 3D CAD" }
+                    { ext: ".csv", emoji: "📋", name: "Comma Separated Values", desc: "File di testo semplice contenente dati strutturati in tabella separati semplicemente da virgole o punti e virgola.", type: "Tabella Dati" },
+                    { ext: ".mdb", emoji: "🗄️", name: "Microsoft Access Database", desc: "Database relazionale tradizionale sviluppato da Microsoft per la gestione di archivi locali di dati.", type: "Database Access" },
+                    { ext: ".accdb", emoji: "📊", name: "Access Database Modern", desc: "Formato di database relazionale moderno utilizzato da Microsoft Access per tabelle e query avanzate.", type: "Database Ufficio" },
+                    { ext: ".db", emoji: "🗄️", name: "Generic Database File", desc: "File generico utilizzato da svariate applicazioni software per memorizzare dati locali e tabelle.", type: "Database Generico" },
+                    { ext: ".dbf", emoji: "📋", name: "dBASE Database File", desc: "Storico formato di database tabulare nato con il sistema dBASE e utilizzato in svariati contesti.", type: "Database Storico" },
+                    { ext: ".ods", emoji: "📊", name: "OpenDocument Spreadsheet", desc: "Foglio di calcolo standard aperto utilizzato da LibreOffice Calc e pacchetti open-source.", type: "Foglio Open Source" },
+                    { ext: ".xls", emoji: "📈", name: "Excel Spreadsheet Legacy", desc: "Storico formato di foglio di calcolo binario di Microsoft Excel utilizzato fino alla versione 2003.", type: "Foglio Legacy" },
+                    { ext: ".numbers", emoji: "🍏", name: "Apple Numbers Spreadsheet", desc: "Foglio di calcolo nativo della suite iWork sviluppata da Apple per macOS e dispositivi mobili iOS.", type: "Foglio Apple" },
+                    { ext: ".bak", emoji: "💾", name: "Database Backup File", desc: "File di copia di sicurezza generato da un sistema di database per prevenire la perdita accidentale di dati.", type: "Backup Database" },
+                    { ext: ".dmp", emoji: "📉", name: "Database Dump File", desc: "File di esportazione completo di dati e tabelle estratto da sistemi di gestione database aziendali.", type: "Export Dati" },
+                    { ext: ".ldf", emoji: "📝", name: "SQL Server Log File", desc: "File di registro delle transazioni utilizzato dai database Microsoft SQL Server per tracciare le modifiche.", type: "Log Transazioni" },
+                    { ext: ".mdf", emoji: "🗄️", name: "SQL Server Master Data", desc: "File di dati principale utilizzato da Microsoft SQL Server per memorizzare le tabelle e gli indici.", type: "Dati SQL Server" },
+                    { ext: ".sqlite3", emoji: "🗃️", name: "SQLite 3 Database", desc: "Versione aggiornata del database locale leggero SQLite, utilizzato in innumerevoli app e browser.", type: "Database SQLite" },
+                    { ext: ".db3", emoji: "🗄️", name: "Database Version 3 File", desc: "File di database strutturato utilizzato da diverse applicazioni per la memorizzazione locale.", type: "Database Dati" },
+                    { ext: ".pdb", emoji: "📚", name: "Program Database / Palm", desc: "File di database utilizzato storicamente dai palmari Palm OS o come archivio di simboli di debug.", type: "Database Palmare" },
+                    { ext: ".nsf", emoji: "📨", name: "Lotus Notes Database", desc: "Database aziendale utilizzato dal client di posta elettronica e collaborazione IBM Lotus Notes.", type: "Database IBM" },
+                    { ext: ".fdb", emoji: "🔥", name: "Firebird Database File", desc: "File di database relazionale utilizzato dal sistema open-source Firebird SQL.", type: "Database Firebird" },
+                    { ext: ".myd", emoji: "📊", name: "MySQL MyISAM Data", desc: "File di dati della tabella MyISAM utilizzato storicamente dai server di database MySQL.", type: "Tabella MySQL" },
+                    { ext: ".myi", emoji: "📊", name: "MySQL MyISAM Index", desc: "File di indice associato alle tabelle MySQL MyISAM per velocizzare le ricerche nei record.", type: "Indice MySQL" },
+                    { ext: ".frm", emoji: "📋", name: "MySQL Table Structure", desc: "File che memorizza la struttura e la definizione delle tabelle nei vecchi server MySQL.", type: "Struttura MySQL" },
+                    { ext: ".db-journal", emoji: "📝", name: "SQLite Journal File", desc: "File di registro temporaneo utilizzato da SQLite per garantire la sicurezza e la transazionalità.", type: "Journal SQLite" },
+                    { ext: ".qvd", emoji: "📊", name: "QlikView Data File", desc: "File di dati ottimizzato e compresso utilizzato dalla piattaforma di business intelligence QlikView.", type: "Business Intelligence" },
+                    { ext: ".parquet", emoji: "📦", name: "Apache Parquet Data", desc: "Formato di memorizzazione di dati colonnari orientato alle grandi moli di dati e Big Data analitici.", type: "Big Data" },
+                    { ext: ".avro", emoji: "🦅", name: "Apache Avro Data File", desc: "Sistema di serializzazione dati basato su schema utilizzato nei progetti di elaborazione Big Data.", type: "Serializzazione Dati" },
+                    { ext: ".feather", emoji: "🪶", name: "Apache Arrow Feather", desc: "Formato di file colonnare leggero e veloce per la memorizzazione di DataFrame in Python e R.", type: "Data Science" },
+                    { ext: ".ion", emoji: "📋", name: "Amazon Ion Data File", desc: "Formato di dati orientato ai valori e basato su JSON arricchito con tipi di dati avanzati.", type: "Dati Amazon" },
+                    { ext: ".ndjson", emoji: "📋", name: "Newline Delimited JSON", desc: "Formato di dati in cui ogni riga rappresenta un oggetto JSON indipendente separato da ritorno a capo.", type: "JSON in Linea" }
                 ]
             },
             {
@@ -254,26 +443,36 @@
                 name: "Estensioni Particolari",
                 icon: "🔮",
                 items: [
-                    { ext: ".bf", emoji: "🧠", name: "Brainfuck", desc: "I file di codice con estensione .bf appartengono a Brainfuck, un linguaggio di programmazione esoterico minimalista creato da Urban Müller nel 1993. È intenzionalmente progettato con soli 8 simboli geometrici primitivi per fondere il cervello dei programmatori, riducendo qualsiasi logica computazionale a variazioni estreme su un array di byte.", type: "Linguaggio Esoterico" },
-                    { ext: ".chef", emoji: "🍳", name: "Chef", desc: "Il formato .chef è un linguaggio di programmazione in cui il codice sorgente è strutturato in modo da assomigliare in tutto e per tutto a una vera e propria ricetta di cucina. All'interno del file troviamo istruzioni culinarie formali come 'prendi 111 grammi di zucchero e mescola', le quali vengono interpretate ed eseguite da un apposito compilatore.", type: "Linguaggio Culinario" },
-                    { ext: ".ws", emoji: "👻", name: "Whitespace", desc: "I file .ws contengono codice sorgente scritto interamente ed esclusivamente utilizzando spazi vuoti, tabulazioni e ritorni a capo. Alla normale vista umana attraverso un editor standard, la pagina web o il documento appaiono totalmente bianchi e vuoti, rendendo il codice invisibile a chi non utilizza strumenti di analisi mirati.", type: "Linguaggio Invisibile" },
-                    { ext: ".lol", emoji: "🐱", name: "LOLCODE", desc: "L'estensione .lol identifica LOLCODE, un linguaggio di programmazione basato interamente sulla grammatica storpiata dei celebri meme dei gatti di internet (il lolspeak). Le parole chiave e la sintassi prevedono costrutti comici ed espressivi come 'HAI' per inizializzare l'esecuzione del programma e 'KTHXBYE' per chiuderla definitivamente.", type: "Linguaggio Meme" },
-                    { ext: ".cow", emoji: "🐄", name: "COW", desc: "Il file .cow appartiene al linguaggio di programmazione COW, una variante estrema ed eccentrica in cui le uniche istruzioni valide riconosciute dall'interprete sono costituite da differenti varianti maiuscole e minuscole della parola 'Moo', come ad esempio 'moo', 'MoO', 'mOo' e 'MOO', trasformando la scrittura del software in un pascolo virtuale.", type: "Linguaggio Bizzarro" },
-                    { ext: ".spoon", emoji: "🥄", name: "Spoon", desc: "L'estensione .spoon rappresenta una variante avanzata del Brainfuck che sfrutta una codifica basata sulla codifica di Huffman composta unicamente dalle parole '1' e '0'. Questo processo riduce drasticamente la leggibilità del codice sorgente, trasformandolo in flussi di dati binari apparentemente impazziti e privi di senso logico immediato.", type: "Linguaggio Binario" },
-                    { ext: ".fart", emoji: "✈️", name: "Fart", desc: "Nonostante il nome marcatamente volgare in lingua inglese, l'estensione .fart identifica in realtà un file di testo rigorosamente utilizzato per contenere i parametri e gli script di configurazione del celebre simulatore di volo open-source FlightGear, gestendo complesse dinamiche ambientali.", type: "Configurazione Simulatore" },
-                    { ext: ".poo", emoji: "💩", name: "Poo", desc: "Il formato .poo è uno storico formato di dati protetto e proprietario che veniva impiegato all'interno di un vecchio software di database cartografico sviluppato dalla PoliMap, utilizzato per archiviare informazioni geospaziali di nicchia in contesti tecnici specializzati.", type: "Database Legacy" },
-                    { ext: ".bzz", emoji: "🐝", name: "Buzz Compressed", desc: "L'estensione .bzz viene utilizzata per identificare file compressi mediante l'impiego dell'algoritmo di compressione proprietario noto come 'Buzz', progettato per ottimizzare lo spazio di archiviazione di dati specifici in vecchi sistemi informatici.", type: "Archivio Compresso" },
-                    { ext: ".wtf", emoji: "❓", name: "Where's The File", desc: "Il file .wtf (acronimo di Where's The File) è un file di configurazione speciale ampiamente utilizzato all'interno di vari sistemi operativi e in famosi videogiochi di massa come World of Warcraft per mappare in modo efficiente le impostazioni di sistema e le preferenze utente.", type: "Configurazione di Sistema" },
-                    { ext: ".egg", emoji: "🥚", name: "Egg Archive", desc: "L'estensione .egg rappresenta un formato di archivio compresso, concettualmente molto simile ai più comuni file .zip, che è stato sviluppato e diffuso principalmente in Corea del Sud per la gestione di pacchetti di dati e file multimediali.", type: "Archivio Coreano" },
-                    { ext: ".cat", emoji: "🛡️", name: "Catalog Security", desc: "Nonostante il nome possa trarre in inganno facendo pensare a felini domestici, un file .cat è un file di catalogo di sicurezza utilizzato dai sistemi operativi Windows per contenere firme digitali crittografate utili a verificare l'autenticità e l'integrità dei driver hardware.", type: "Catalogo di Sicurezza" },
-                    { ext: ".dead", emoji: "💀", name: "Dead Email Log", desc: "L'estensione .dead veniva generata automaticamente dai vecchi sistemi operativi Unix quando un messaggio di posta elettronica andava incontro a un crash critico e irreversibile prima di riuscire a essere correttamente inoltrato e inviato (rappresentando letteralmente la mail 'morta').", type: "Log di Crash Unix" },
-                    { ext: ".suicide", emoji: "⚠️", name: "Suicide Process Log", desc: "Il file .suicide raccoglieva i file di log generati quando un determinato processo software o applicativo decideva in autonomia di auto-terminarsi per impedire il blocco totale della memoria RAM e del sistema operativo.", type: "Log di Emergenza" },
-                    { ext: ".graveyard", emoji: "🪦", name: "Graveyard Directory", desc: "L'estensione .graveyard era associata a cartelle di log temporanee e di servizio utilizzate da alcune vecchie applicazioni informatiche per spostare i dati obsoleti prima di procedere alla loro cancellazione definitiva.", type: "Archivio Temporaneo" },
-                    { ext: ".zombie", emoji: "🧟", name: "Zombie Process File", desc: "I file .zombie sono generati da processi di sistema che rimangono formalmente attivi in background all'interno della tabella dei processi pur avendo già terminato la loro funzione principale di calcolo.", type: "Processo Zombie" },
-                    { ext: ".fasta", emoji: "🧬", name: "Fasta DNA Sequence", desc: "L'estensione .fasta identifica un formato di file di testo standard utilizzato in bioinformatica e nei laboratori biologici per memorizzare le sequenze primarie di acidi nucleici (DNA o RNA) o di amminoacidi.", type: "Formato Biologico" },
-                    { ext: ".fits", emoji: "🔭", name: "Flexible Image Transport System", desc: "Il formato .fits raccoglie immagini astronomiche ad altissima densità che contengono i dati grezzi catturati dai telescopi spaziali, completi di coordinate scientifiche delle galassie.", type: "Immagine Astronomica" },
-                    { ext: ".gcode", emoji: "🖨️", name: "G-Code 3D Print", desc: "L'estensione .gcode è un file di testo puro contenente esclusivamente coordinate matematiche cartesiane e comandi di temperatura progettati per guidare con precisione millimetrica il movimento delle stampanti 3D.", type: "Controllo Stampa 3D" },
-                    { ext: ".oxl", emoji: "🔬", name: "Molecular OXL Data", desc: "Il formato .oxl viene utilizzato in ambito scientifico per memorizzare dati genetici complessi relativi all'espressione dei geni e ai test di biologia molecolare avanzata.", type: "Dati Molecolari" }
+                    { ext: ".bf", emoji: "🧠", name: "Brainfuck", desc: "I file di codice con estensione .bf appartengono a Brainfuck, un linguaggio di programmazione esoterico minimalista.", type: "Linguaggio Esoterico" },
+                    { ext: ".chef", emoji: "🍳", name: "Chef", desc: "Il formato .chef è un linguaggio di programmazione in cui il codice sorgente assomiglia a una ricetta di cucina.", type: "Linguaggio Culinario" },
+                    { ext: ".ws", emoji: "👻", name: "Whitespace", desc: "I file .ws contengono codice sorgente scritto interamente ed esclusivamente utilizzando spazi vuoti e tabulazioni.", type: "Linguaggio Invisibile" },
+                    { ext: ".lol", emoji: "🐱", name: "LOLCODE", desc: "L'estensione .lol identifica LOLCODE, un linguaggio di programmazione basato sui meme dei gatti di internet.", type: "Linguaggio Meme" },
+                    { ext: ".cow", emoji: "🐄", name: "COW", desc: "Il file .cow appartiene a un linguaggio in cui le uniche istruzioni valide sono varianti della parola 'Moo'.", type: "Linguaggio Bizzarro" },
+                    { ext: ".spoon", emoji: "🥄", name: "Spoon", desc: "L'estensione .spoon rappresenta una variante di Brainfuck basata su codifiche binarie con '1' e '0'.", type: "Linguaggio Binario" },
+                    { ext: ".fart", emoji: "✈️", name: "Fart", desc: "File di testo utilizzato per contenere i parametri di configurazione del simulatore di volo FlightGear.", type: "Configurazione Simulatore" },
+                    { ext: ".poo", emoji: "💩", name: "Poo", desc: "Storico formato di dati proprietario impiegato in un vecchio software di database cartografico.", type: "Database Legacy" },
+                    { ext: ".bzz", emoji: "🐝", name: "Buzz Compressed", desc: "L'estensione .bzz identifica file compressi mediante l'algoritmo proprietario noto come 'Buzz'.", type: "Archivio Compresso" },
+                    { ext: ".wtf", emoji: "❓", name: "Where's The File", desc: "File di configurazione speciale utilizzato in vari sistemi operativi e in videogiochi come World of Warcraft.", type: "Configurazione di Sistema" },
+                    { ext: ".egg", emoji: "🥚", name: "Egg Archive", desc: "Formato di archivio compresso molto simile al file .zip, diffuso principalmente in Corea del Sud.", type: "Archivio Coreano" },
+                    { ext: ".cat", emoji: "🛡️", name: "Catalog Security", desc: "File di catalogo di sicurezza utilizzato da Windows per contenere firme digitali di driver hardware.", type: "Catalogo di Sicurezza" },
+                    { ext: ".dead", emoji: "💀", name: "Dead Email Log", desc: "Estensione generata dai vecchi sistemi Unix quando un messaggio di posta andava incontro a un crash.", type: "Log di Crash Unix" },
+                    { ext: ".suicide", emoji: "⚠️", name: "Suicide Process Log", desc: "File di log generato quando un processo software decide di auto-terminarsi per salvare la memoria.", type: "Log di Emergenza" },
+                    { ext: ".graveyard", emoji: "🪦", name: "Graveyard Directory", desc: "Estensione associata a cartelle di log temporanee usate da vecchie applicazioni per dati obsoleti.", type: "Archivio Temporaneo" },
+                    { ext: ".zombie", emoji: "🧟", name: "Zombie Process File", desc: "File generati da processi di sistema rimasti attivi in background pur avendo terminato le funzioni.", type: "Processo Zombie" },
+                    { ext: ".fasta", emoji: "🧬", name: "Fasta DNA Sequence", desc: "Formato di testo standard utilizzato in bioinformatica per memorizzare sequenze di DNA o RNA.", type: "Formato Biologico" },
+                    { ext: ".fits", emoji: "🔭", name: "Flexible Image Transport System", desc: "Formato che raccoglie immagini astronomiche ad altissima densità catturate dai telescopi spaziali.", type: "Immagine Astronomica" },
+                    { ext: ".gcode", emoji: "🖨️", name: "G-Code 3D Print", desc: "File di testo puro contenente coordinate cartesiane per guidare il movimento delle stampanti 3D.", type: "Controllo Stampa 3D" },
+                    { ext: ".oxl", emoji: "🔬", name: "Molecular OXL Data", desc: "Formato utilizzato in ambito scientifico per memorizzare dati genetici e test di biologia molecolare.", type: "Dati Molecolari" },
+                    { ext: ".rom", emoji: "🕹️", name: "ROM Cartridge Data", desc: "Copia dei dati estratti dai chip delle vecchie cartucce di videogiochi per emulatori.", type: "Retrogaming" },
+                    { ext: ".sav", emoji: "💾", name: "Game Save State", desc: "File che memorizza i salvataggi, i progressi e i punteggi di gioco di un utente all'interno di un videogame.", type: "Salvataggio Gioco" },
+                    { ext: ".obj", emoji: "🗿", name: "Wavefront 3D Object", desc: "Formato universale per modelli tridimensionali scambiato tra Blender, Maya e motori di gioco.", type: "Modello 3D" },
+                    { ext: ".fbx", emoji: "📦", name: "Autodesk FBX", desc: "Formato per scambiare scene 3D complesse complete di animazioni e ossa tra software grafici.", type: "Scena 3D" },
+                    { ext: ".stl", emoji: "🖨️", name: "Stereolithography 3D", desc: "Formato standard utilizzato per inviare modelli geometrici tridimensionali alle stampanti 3D.", type: "Stampa 3D CAD" },
+                    { ext: ".pem", emoji: "🔑", name: "PEM Privacy Enhanced Mail", desc: "Certificato di sicurezza digitale crittografato X.509 fondamentale per abilitare connessioni HTTPS.", type: "Certificato SSL" },
+                    { ext: ".crt", emoji: "🛡️", name: "Security Certificate", desc: "Certificato digitale utilizzato dai server web per autenticare l'identità e proteggere i dati.", type: "Certificato Web" },
+                    { ext: ".key", emoji: "🗝️", name: "Private Security Key", desc: "File che custodisce una chiave di sicurezza privata per decrittografare dati o autenticarsi via SSH.", type: "Chiave Privata" },
+                    { ext: ".torrent", emoji: "🧲", name: "BitTorrent Metafile", desc: "File di metadati che contiene gli indirizzi e le informazioni di tracciamento per scaricare file via P2P.", type: "Protocollo P2P" },
+                    { ext: ".bak", emoji: "💾", name: "Backup File", desc: "Copia di riserva di un file originale creata automaticamente da programmi di scrittura o di sistema.", type: "Backup Sicurezza" }
                 ]
             }
         ];
